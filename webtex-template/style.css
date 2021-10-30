@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Gowun Batang', serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
+}
+
+h1,
+h3 {
+  font-weight: normal;
+}
+
+img {
+  overflow: inherit;
+}
+
+img.img100 {
+  width: 100%;
+  object-fit: contain;
+}
+
+img.img80 {
+  width: 80%;
+}
+
+section {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+
+  white-space: nowrap;
+
+  font-weight: bold;
+  text-transform: uppercase;
+
+  font-size: 0.2in;
+  margin-bottom: 0.3in;
+  margin-top: 0.3in;
+}
+
+section::after {
+  display: block;
+  content: '';
+  width: 100%;
+  border-bottom: 2px solid #000;
+  margin-left: 0.1in;
+  transform: translate(0, -50%);
+  flex-shrink: 1;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.page {
+  height: 11.7in;
+  width: 8.3in;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5in;
+
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.front-cover {
+  justify-content: space-around;
+}
+
+.description {
+  align-self: flex-start;
+}
