@@ -1,0 +1,11 @@
+{
+  "name": "webtex-parser",
+  "version": "1.0.0",
+  "description": "A parser for WebTex",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "owozsh",
+  "license": "MIT"
+}
