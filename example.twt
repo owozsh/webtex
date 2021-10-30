@@ -1,0 +1,44 @@
+.cover.center
+  !image[path](alt text){label}
+
+  # My Document
+
+  !date[language]
+
+  .center
+    *Author:* Panda Guy
+    *Teacher:* Panda Master
+
+.
+  !index.no-numbers
+
+.
+  #.center.fg-blue TO-DO
+
+  + Done
+  = to-do
+
+.
+  # List
+
+  ## Sample ul
+
+  - first item
+    - sub-item
+  - more items
+
+  ## Sample ol
+
+  -. first thing
+  -. second thing
+  -. third thing
+
+.
+  # Centered List
+
+  .center
+    - item1
+    - item2
+
+  > quotation
+
