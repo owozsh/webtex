@@ -1,6 +1,8 @@
 import symbols from './symbols.js';
 import readWtex from './readWtex.js';
 
+import { parse } from 'node-html-parser';
+
 const webtexDocumentText = readWtex('../example.wtex');
 const webtexDocument = webtexDocumentText.split('\n').filter((e) => e);
 
@@ -23,7 +25,17 @@ const parsePage = (pageStartLineNumber, doc) => {
   for (let i = pageStartLineNumber + 1; i < doc.length && doc[i] != '.'; i++) {
     page.push(doc[i]);
   }
-  console.log(page[page.length - 1]);
+
+  let pageClasses = page[0].split('.').filter((e) => e);
+  let pageContainer = parse('<div class="page"></div>');
+
+  for (let pageClass of pageClasses) {
+    pageContainer.firstChild.classList.add(pageClass);
+  }
+
+  console.log(pageContainer.toString());
 };
+
+const parseContainer = () => {};
 
 parseWebTexDocument(webtexDocument);

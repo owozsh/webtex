@@ -1,4 +1,4 @@
-.cover.center
+.cover
   !image[path](alt text){label}
 
   # My Document
