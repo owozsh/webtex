@@ -33,5 +33,5 @@ export default class WtexParser {
     console.log(pageContainer.toString());
   };
 
-  #parseContainer = () => {};
+  parseContainer = () => {};
 }
