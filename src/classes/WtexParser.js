@@ -1,13 +1,11 @@
 import { parse } from "node-html-parser";
 
 export default class WtexParser {
-  parseWebTexDocument = (wtex) => {
-    for (let i = 0; i < wtex.length; i++) {
-      let line = wtex[i];
-      if (line[0] == ".") {
-        this.parsePage(i, wtex);
-      } else if (line[0] == "") {
-        continue;
+  parseWebTexDocument = (wtexDoc) => {
+    for (let i = 0; i < wtexDoc.length; i++) {
+      let wtexDocline = wtexDoc[i];
+      if (wtexDocline[0] == ".") {
+        this.parsePage(i, wtexDoc);
       }
     }
   };
